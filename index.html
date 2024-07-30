@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Your Music</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="img/spotify.png" alt="SPOTIFY">SPOTIFY</li>
+            <li>HOME</li>
+            <li>ABOUT US</li>
+            <li>CONTACT US</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- songlist will in left and songbanner in right -->
+        <div class="songlist">
+            <h1>Music Live!</h1>
+            <div class="songItem">
+                <img alt="1">
+                <!-- <img src="img/covers/1.jpg" alt="1"> -->
+                <span class="songlistplay"> 
+                    <i id="0" class=" fa-sharp songitemplay fa-regular  fa-circle-play"></i> 
+                    <span  class="songName">Let me love you</span>
+                    <span class="timestamp">( 5:34) </span>
+                </span>
+            </div>
+            <div class="songItem">
+                <img alt="2">
+                <!-- <img src="img/covers/2.jpg" alt="2"> -->
+                <span class="songlistplay"> 
+                    <i id="1" class=" fa-sharp songitemplay fa-regular   fa-circle-play"></i>
+                    <span class="songName">Bones</span>
+                    <span class="timestamp">( 7:34) </span>
+                </span>
+            </div>
+            <div class="songItem">
+                <img alt="3">
+                <!-- <img src="img/covers/3.jpg" alt="3"> -->
+                <span class="songlistplay">
+                    <i id="2" class=" fa-sharp songitemplay fa-regular   fa-circle-play"></i>
+                    <span class="songName">Cheap Thrills</span>
+                    <span class="timestamp">( 1:34) </span>
+                </span>
+
+            </div>
+            <div class="songItem">
+                <img alt="4">
+                <!-- <img src="img/covers/4.jpg" alt="4"> -->
+                <span class="songlistplay">
+                    <i id="3" class=" fa-sharp songitemplay fa-regular   fa-circle-play"></i>
+                    <span class="songName">Cold Water</span>
+                    <span class="timestamp">( 6:34) </span>
+                </span>
+
+            </div>
+            <div class="songItem">
+                <img alt="5">
+                <!-- <img src="img/covers/5.jpg" alt="5"> -->
+                <span class="songlistplay"> 
+                    <i id="4" class=" fa-sharp songitemplay fa-regular   fa-circle-play"></i> 
+                    <span class="songName">Naatu Song</span>
+                    <span class="timestamp">( 2:34) </span>
+                </span>
+
+            </div>
+            <div class="songItem">
+                <img alt="6">
+                <!-- <img src="img/covers/6.jpg" alt="6"> -->
+                <span class="songlistplay">
+                     <i id="5" class=" fa-sharp songitemplay fa-regular   fa-circle-play"></i> 
+                     <span class="songName">Daspacito</span>
+                     <span class="timestamp">( 3:34) </span>
+                </span>
+
+            </div>
+
+            <div class="songItem">
+                <img alt="7">
+                <!-- <img src="img/covers/7.jpg" alt="7"> -->
+                <span class="songlistplay"> 
+                    <i id="6" class=" fa-sharp songitemplay fa-regular   fa-circle-play"></i> 
+                    <span class="songName">Lean On</span>
+                    <span class="timestamp">( 4:34) </span>
+                </span>
+
+            </div>
+        </div>
+        <div class="songbanner"></div>
+
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myprogressbar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontawsome icons -->
+            <i class="fa-solid fa-3x fa-backward-step" id="previous"></i>
+            <i class=" fa-sharp fa-regular fa-3x  fa-play-circle" id="masterplay"></i>
+            <i class="fa-solid fa-3x fa-forward-step" id="next"></i>
+
+        </div>
+
+        <div class="songinfo">
+            <img src="img/playing.gif" width="45px" alt="playing" id="gif"><span id="masterSongName"></span>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/09aa79fd1b.js" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>

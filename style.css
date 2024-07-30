@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+body{
+    background-color: rgb(220, 246, 185);
+    /* background-color: rgb(235 173 238); */
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+    
+
+}
+nav ul li{
+    padding:  0px 10px;
+    font-size: 0.89rem;
+    cursor:default;
+
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{
+
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    color: rgb(15, 230, 83);
+}
+
+.container{
+   min-height: 80vh;
+   background-color: black;
+   color: white;
+   font-family: 'Varela Round',sans-serif;
+   display: flex;
+   margin: 30px auto;
+   padding: 35px;
+   width: 70%;
+   border-radius: 10px;
+   background: url(img/bg2.jpg) no-repeat center center/cover;
+   background-size: cover;
+ 
+   
+
+
+   
+}
+#myprogressbar{
+    width: 80vw;
+}
+
+.bottom{
+    display: flex;
+    background-color: black;
+    height: 100px;
+    justify-content:center;
+    align-items: center;
+    /* position: sticky; */
+    /* bottom: 0px; */
+    color: white;
+    flex-direction:column;
+}
+
+.icons{
+    margin-top:13px ;
+}
+
+
+/* below is used for space between the play next back buttons */
+.icons i{
+    padding: 0px 6px;
+    cursor:pointer;
+}
+
+.songItem {
+    height: 10%;
+    background-color: rgb(155 192 230);
+    color: black;
+    /* width: 109%; */
+    display: flex;
+    font-size: 0.8rem;
+    margin: 12px 0px;
+    padding: 2px;
+    /* justify-content:space-between; */
+    /* justify-content:space-around; */
+    align-items: center;
+    cursor:default;
+    border-radius: 15px;
+}
+
+/* .songlistplay{
+    cursor:pointer;
+    padding: 0px 10px;
+} */
+.songlistplay i {
+    cursor:pointer;
+    /* padding: 0px 10px; */
+    padding-left: 9px;
+}
+.songItem img{
+    width: 33px;
+    height: 33px;
+    border-radius: 14px;
+}
+.songinfo{
+    position: absolute;
+    /* left: 0px; */
+    left: 10vw;
+    font-family:  'Varela Round',sans-serif;;
+   
+    
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+  }
